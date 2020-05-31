@@ -1,0 +1,21 @@
+{
+  "name": "basis",
+  "version": "1.0.0",
+  "description": "Basis version of pipeline test",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "lint": "eslint src/**/*",
+    "docs": "./node_modules/.bin/typedoc --tsconfig tsconfig.json",
+    "sonar": "sonar-scanner -Dsonar.projectKey=BA_Test_B -Dsonar.sources=./src -Dsonar.host.url=http://192.168.2.100:9000 -Dsonar.login=cf7c5f86728a5bb40d66b650ca72707890a4f274"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "typedoc": "^0.17.3"
+  }
+}
